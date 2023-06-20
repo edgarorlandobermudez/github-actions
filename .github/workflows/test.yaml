@@ -9,15 +9,15 @@ on:
 
 jobs:
     hello:
-        run-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - name: hello test
               run: echo "Hello test"
               shell: bash
 
-    goodbye:
-        run-on: ubuntu-latest
+    goodbye: 
+        runs-on: ubuntu-latest
         steps:
             - name: goodbye test
               run: echo "Goodbye test"
